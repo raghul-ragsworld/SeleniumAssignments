@@ -30,7 +30,18 @@ public class FibonacciSeries {
 		// Assign sum to the second number
 		
 		// print sum
-
+		
+		int firstNum=0 , secNum=1;
+		System.out.print(firstNum+",");
+		System.out.print(secNum+",");
+		for (int i=0;i<6;i++)
+		{
+			int sum=firstNum+secNum;
+			firstNum=secNum;
+			secNum=sum;
+			System.out.print(sum+",");
+			
+		}
 	}
 
 }
